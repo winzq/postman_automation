@@ -20,6 +20,18 @@ public class PostmanTests extends Pojo {
                 .when().get()
                 .then().statusCode(200);
     }
+
+    @Test
+    public void Check404Status()
+    {
+        given()
+                .baseUri("https://postman-echo.com")
+                .basePath("ge")
+                .contentType(ContentType.JSON)
+                .when().get()
+                .then().statusCode(404);
+    }
+
     @Test
     public void GetMethodURLCheck()
     {
