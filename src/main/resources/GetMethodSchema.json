@@ -1,0 +1,15 @@
+{
+  "args": {},
+  "headers": {
+    "x-forwarded-proto": true,
+    "x-forwarded-port": "443",
+    "host": "postman-echo.com",
+    "x-amzn-trace-id": "Root=1-60b5150f-29321b1b1730de2000f2cf91",
+    "user-agent": "PostmanRuntime/7.28.0",
+    "accept": "*/*",
+    "cache-control": "no-cache",
+    "postman-token": "2eb33d89-865b-4974-aa3d-68e2b046d6e1",
+    "accept-encoding": "gzip, deflate, br"
+  },
+  "url": "https://postman-echo.com/get"
+}
