@@ -18,9 +18,19 @@ public class PostmanTests extends Pojo {
                 .basePath("/get")
                 .contentType(ContentType.JSON)
                 .when().get()
-                .then().statusCode(200)
-                .body("headers[0].host",equalTo("postman-echo.com"));
+                .then().statusCode(200);
     }
+    @Test
+    public void GetMethodURLCheck()
+    {
+        given()
+                .baseUri("https://postman-echo.com")
+                .basePath("/get")
+                .contentType(ContentType.JSON)
+                .when().get()
+                .then().body("url",equalTo("https://postman-echo.com/get"));
+    }
+
 
     @Test
     public void GetSchemaValidate () {
